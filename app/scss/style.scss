@@ -1,0 +1,58 @@
+@import "mixin";
+body{
+	width: 450px;
+	align-content: center;
+	margin:auto;
+	font-family: 'Open Sans'; 
+}
+
+.container{
+   background:#000;
+   height: 400px;
+
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;	
+    @include tablet {
+	
+
+	}
+
+}
+
+
+.logo { 
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@include tablet {
+		
+
+	}
+	
+}
+
+.lable{
+	color: #fff;
+	line-height: 3;
+	font-style: normal;
+
+}
+
+#myList{
+	color: #fff;
+
+
+}
+
+
+.legal {
+ padding: 20px 20px;
+ background: black;
+ color: #c2c2c2;
+ text-align: center;
+
+}
