@@ -1,13 +1,13 @@
 // Initialize modules
 const { src, dest, watch, series, parallel } = require('gulp');
 const autoprefixer = require ('autoprefixer');
-const cssnano = require ('cssnano');
+const cssnano = require ('gulp-cssnano');
 const concat = require ('gulp-concat');
 const postcss = require ('gulp-postcss');
 const replace = require ('gulp-replace');
 const sass = require ('gulp-sass');
 const sourcemaps = require ('gulp-sourcemaps');
-const uglify = require ('gulp-uglify');
+const terser = require ('gulp-terser');
 
 
 
@@ -23,7 +23,8 @@ function scssTask(){
 	return src(files.scssPath)
 	.pipe(sourcemaps.init())
 	.pipe(sass())
-	.pipe(postcss([ autoprefixer(), cssnano() ]))
+	.pipe(postcss([ autoprefixer()]))
+	.pipe(cssnano())
 	.pipe(sourcemaps.write('.'))
 	.pipe(dest('dist')
 	);
@@ -36,7 +37,7 @@ function scssTask(){
 function jsTask(){
     return src(files.jsPath)
     .pipe(concat('all.js'))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(dest('dist')
 
     );

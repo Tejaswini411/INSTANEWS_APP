@@ -1,1 +1,1 @@
-console.log("hello world");
+$((function(){$.ajax({url:"https://api.nytimes.com/svc/topstories/v2/science.json?api-key=uVsGON6UfLMCDT3ebpRGQZsw0MSqmPCU ",type:"GET",success:function(s){const c=s.results;console.log(c)}})}));
