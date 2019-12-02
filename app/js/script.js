@@ -1,44 +1,46 @@
-$(function () {
+$(document).ready(function() {
 
-// const getArticle = ( => ) { 
+  $('.loader').hide();
 
-// }
+  const fetchArticles = (articleType) => {
+    $.ajax({
+        url: `https://api.nytimes.com/svc/topstories/v2/${articleType}.json?api-key=uVsGON6UfLMCDT3ebpRGQZsw0MSqmPCU`,
+        type: 'GET',
+        success: function(res) {
+            var desc = res.results;
+            populateArticles(res.results);
+        }
+    });
+  };
 
+  const populateArticles = (results) => {
+    results.map((result) => {
+      if (result.multimedia.length > 0) {
+        const articleStructure = `<div class="article-container"><img src="${result.multimedia[4].url}" class="article-image" alt="" /><p class="article-desc">${result.abstract}</p></div>`;
+        $('.top-stories').append(articleStructure);
+      }
+      $('.loader').hide();
+    });
+  };
 
-$.ajax({
-    url: "https://api.nytimes.com/svc/topstories/v2/science.json?api-key=uVsGON6UfLMCDT3ebpRGQZsw0MSqmPCU ",
-    type: 'GET',
-    success: function(res) {
-        const desc = res.results;
-        console.log(desc);
+  $('#myList').on('change', () => {
+    $('.top-stories').html('');
+    $('.loader').show();
 
-        // let desc = res.results[2].abstract;
-        // console.log(desc);
-
-        // $( ".abstract" ).append( `<p>${desc}</p>`);
-        
+    if($("option:selected").val() === "") {
+      
+      return;
     }
+
+    const articleType = $("option:selected").text().toLowerCase();
+    fetchArticles(articleType);
+  });
+  
 });
 
-});
 
 
 
 
 
 
-
-
-
-
-
-
-//secret
-////uIL9me8aCA3Fdr0A
-
-
-//key
-///uVsGON6UfLMCDT3ebpRGQZsw0MSqmPCU
-
-//app id
-//d3398400-cce5-45b2-814c-affe8998ce1f
