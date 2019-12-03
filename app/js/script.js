@@ -36,6 +36,8 @@ $(document).ready(function() {
     fetchArticles(articleType);
   });
   
+  fetchArticles("home");
+
 });
 
 
