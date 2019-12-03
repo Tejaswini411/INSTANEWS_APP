@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
   };
 
-  $('#myList').on('change', () => {
+  $('.myList').on('change', () => {
     $('.top-stories').html('');
     $('.loader').show();
 
