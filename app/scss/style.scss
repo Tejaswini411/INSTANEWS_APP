@@ -36,7 +36,7 @@ header{
 }
 
 .myList{
-	color: #fff;
+	color: black;
 }
 
 .legal {
@@ -46,9 +46,6 @@ header{
  text-align: center;
  margin: 0;
 
- @include desktop {
-	 text-align: left;
- }
 }
 
 .top-stories {
@@ -78,7 +75,10 @@ header{
 	padding: 10px;
 	background: rgba(0, 0, 0, .5);
 	margin: 0;
+	transition:all .3s ease-in;
+
 }
+
 
 .article-image {
 	width: 100%;
@@ -99,10 +99,14 @@ header{
   width: 60px;
   height: 60px;
   animation: spin 2s linear infinite;
-	margin: auto;
+  margin: auto;
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.article-desc:hover {
+	opacity: 0;
 }
