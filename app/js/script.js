@@ -16,7 +16,8 @@ $(document).ready(function() {
   const populateArticles = (results) => {
     results.map((result) => {
       if (result.multimedia.length > 0) {
-        const articleStructure = `<div class="article-container"><img src="${result.multimedia[4].url}" class="article-image" alt="" /><p class="article-desc">${result.abstract}</p></div>`;
+        const articleStructure = `<div class="article-container"><a href="${result.url}" title="${result.title}"><img src="${result.multimedia[4].url}" class="article-image" alt="" /><p class="article-desc">${result.abstract}</p></a></div>`;
+
         $('.top-stories').append(articleStructure);
       }
       $('.loader').hide();
