@@ -18,5 +18,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.2.0"
+  },
+  "dependencies": {
+    "jquery-custom-select": "^1.6.4"
   }
 }
