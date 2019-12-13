@@ -2,6 +2,8 @@ $(document).ready(function() {
 
   $('.loader').hide();
 
+  $('select').selectric();
+
   const fetchArticles = (articleType) => {
     $.ajax({
         url: `https://api.nytimes.com/svc/topstories/v2/${articleType}.json?api-key=uVsGON6UfLMCDT3ebpRGQZsw0MSqmPCU`,
@@ -29,8 +31,7 @@ $(document).ready(function() {
     $('.loader').show();
 
     if($("option:selected").val() === "") {
-      
-      return;
+      fetchArticles("home"); 
     }
 
     const articleType = $("option:selected").text().toLowerCase();
