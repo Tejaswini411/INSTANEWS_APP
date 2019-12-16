@@ -14,7 +14,7 @@ const terser = require ('gulp-terser');
 
 // File path variables
 const files = {
-	scssPath: 'app/scss/**/style.scss' ,
+	scssPath: 'app/scss/**/*.scss' ,
 	jsPath: 'app/js/**/*.js'
 }
 
