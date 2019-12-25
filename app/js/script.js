@@ -16,12 +16,23 @@ $(document).ready(function() {
   };
 
   const populateArticles = (results) => {
+    let i = 0;
+    stories = [];
     results.map((result) => {
-      if (result.multimedia.length > 0) {
-        const articleStructure = `<div class="article-container"><a href="${result.url}" title="${result.title}"><img src="${result.multimedia[4].url}" class="article-image" alt="" /><p class="article-desc">${result.abstract}</p></a></div>`;
+        if (result.multimedia.length > 0 && i < 12) {
+          const articleStructure = `
+          <div class="article-container">
+            <a href="${result.url}" title="${result.title}">
+              <img src="${result.multimedia[4].url}" class="article-image" alt="" />
+              <p class="article-desc">${result.abstract}</p>
+            </a>
+          </div>`;
+          stories.push(articleStructure);
+          $('.top-stories').append(stories[i]);
+          i++;
 
-        $('.top-stories').append(articleStructure);
-      }
+        }
+
       $('.loader').hide();
     });
   };
