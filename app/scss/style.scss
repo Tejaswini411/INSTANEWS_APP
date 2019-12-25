@@ -9,11 +9,8 @@ body{
 	font-family: 'Open Sans';
 }
 
-.container{
-   background:#000;
-}
-
 header{
+	background:#000;
 	display: grid;
 	align-items: center;
 	justify-items: center;
@@ -36,7 +33,7 @@ header{
 	}
 }
 
-.lable{
+label{
 	color: #fff;
 	line-height: 3;
 	font-style: normal;
