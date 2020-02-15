@@ -16,14 +16,18 @@ $(document).ready(function() {
   };
 
   const populateArticles = (results) => {
-    results.map((result) => {
-      if (result.multimedia.length > 0) {
-        const articleStructure = `<div class="article-container"><a href="${result.url}" title="${result.title}"><img src="${result.multimedia[4].url}" class="article-image" alt="" /><p class="article-desc">${result.abstract}</p></a></div>`;
+    if (results.length >= 12) {
+    // results.map((result) => {
+      for(i=0;i<=11;i++){
+      if (results[i].multimedia.length > 0) {
+        const articleStructure = `<div class="article-container"><a href="${results[i].url}" title="${results[i].title}"><img src="${results[i].multimedia[4].url}" class="article-image" alt="" /><p class="article-desc">${results[i].abstract}</p></a></div>`;
 
         $('.top-stories').append(articleStructure);
       }
       $('.loader').hide();
-    });
+    }
+  }
+    // });
   };
 
   $('.myList').on('change', () => {

@@ -12,6 +12,7 @@ const terser = require ('gulp-terser');
 
 
 
+
 // File path variables
 const files = {
 	scssPath: 'app/scss/**/*.scss' ,
@@ -57,6 +58,9 @@ function cacheBustTask(){
 }
 
 
+
+
+
 // Watch task 
 
 
@@ -74,3 +78,5 @@ exports.default = series(
     watchTask
 	);
 
+
+	
