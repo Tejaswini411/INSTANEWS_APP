@@ -14,9 +14,16 @@ Optimize for 3 widths: mobile, ipad and desktop
 * Gulp (runing task such as watch, browser-syn and sass)
 * Git & Github
 
+![alt text](/Users/tejaswinikumar/Desktop/INSTANEWS-APP/images/screencapture-file-Users-tejaswinikumar-Desktop-INSTANEWS-APP-index-html-2020-02-18-19_20_23.png)
+
+![alt text](/Users/tejaswinikumar/Desktop/INSTANEWS-APP/images/screencapture-file-Users-tejaswinikumar-Desktop-INSTANEWS-APP-index-html-2020-02-18-19_19_33.png)
+
+![alt text](/Users/tejaswinikumar/Desktop/INSTANEWS-APP/images/screencapture-file-Users-tejaswinikumar-Desktop-INSTANEWS-APP-index-html-2020-02-18-19_22_41.png)
+
+
+
+
 # Learnings
-
-
 ### Sass
 SassScript is the scripting language itself.
 Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.
