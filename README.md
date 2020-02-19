@@ -14,13 +14,11 @@ Optimize for 3 widths: mobile, ipad and desktop
 * Gulp (runing task such as watch, browser-syn and sass)
 * Git & Github
 
-![alt text](https://github.com/Tejaswini411/INSTANEWS_APP/app/images/screencapture-file-Users-tejaswinikumar-Desktop-INSTANEWS-APP-index-html-2020-02-18-19_20_23.png)
+![Desktop Preview](images/screencapture-file-Users-tejaswinikumar-Desktop-INSTANEWS-APP-index-html-2020-02-18-19_20_23.png)
 
-![alt text](https://github.com/Tejaswini411/INSTANEWS_APP/app/images/screencapture-file-Users-tejaswinikumar-Desktop-INSTANEWS-APP-index-html-2020-02-18-19_19_33.png)
+![Tablet Preview](images/screencapture-file-Users-tejaswinikumar-Desktop-INSTANEWS-APP-index-html-2020-02-18-19_19_33.png)
 
-![alt text](https://github.com/Tejaswini411/INSTANEWS_APP/app/images/screencapture-file-Users-tejaswinikumar-Desktop-INSTANEWS-APP-index-html-2020-02-18-19_22_41.png)
-
-
+![Mobile Preview](images/screencapture-file-Users-tejaswinikumar-Desktop-INSTANEWS-APP-index-html-2020-02-18-19_22_41.png)
 
 
 # Learnings
