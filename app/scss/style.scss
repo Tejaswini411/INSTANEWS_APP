@@ -19,6 +19,7 @@ header{
 	justify-items: center;
 	grid-template-columns: 100%;
 	padding-bottom: 50px;
+	
 
 	@include tablet {
 		grid-template-columns: 20% 20% 60%;
@@ -35,6 +36,7 @@ header{
 		padding-right: 100px;
 	}
 }
+
 
 .lable{
 	color: #fff;
@@ -89,6 +91,11 @@ header{
 			color: #fff;
 			position: absolute;
 			transition: transform  0.8s;
+			font-family: 'Abel',Arial, Helvetica, sans-serif;
+			text-align: center;
+			padding: 10px;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
 		}
 
 	&:hover{
